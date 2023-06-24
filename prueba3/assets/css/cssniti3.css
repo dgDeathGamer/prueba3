@@ -1,0 +1,44 @@
+form:invalid {
+    border-style: red;
+}
+
+.negro{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    padding: 20px;
+}
+.blanco{
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    padding: 20px;
+}
+.small-letras{
+    font-size: 8px;
+}
+.medium-letras{
+    font-size: 12px;
+}
+.large-letras{
+    font-size: 16px;
+}
+
+.formulario-container {
+    border: 2px solid black;
+    padding: 20px; 
+    background-color: lightgray;
+
+}
+#contenedorTabla {
+    padding: 4px;
+}
+  
+#contenedorTabla table {
+    border-collapse: separate;
+    border-spacing: 4px;
+}
+  
+#contenedorTabla td, #contenedorTabla th {
+    padding: 4px;
+}

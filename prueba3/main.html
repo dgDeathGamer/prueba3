@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terraria</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/cssniti3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body style="background-image: url(https://terraria.org/static/media/background.ea292d81.jpg);">
+    <header>
+        <nav class="navbar fixed-top" style="background-color:darkgray;">
+            <div class="container-fluid">
+                <ul class="nav nav-pills">
+                    <button id="btnContraste" value="0">Contraste</button>
+                    <button id="btnFuente" value="1">Fuente</button>
+                    <li class="nav-item"><a href="#Terraria" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#¿Que es Terraria?" class="nav-link">¿Que es Terraria?</a></li>
+                    <li class="nav-item"><a href="#imagenes del juego" class="nav-link">Imagenes</a></li>
+                    <li class="nav-item"><a href="#Trailer" class="nav-link">Trailer</a></li>
+                    <li class="nav-item"><a href="#Formulario" class="nav-link">Ir Formulario</a></li>
+                    <a href="https://web.facebook.com/TerrariaOfficial/?_rdc=1&_rdr"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/terraria_logic/?hl=es"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/Terraria_Logic"><i class="fab fa-twitter"></i></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div class="container mt-5">
+        <h2 id="Terraria">Terraria</h2>
+
+        <img src="assets/img/terrariaimg.jpg" class="img-fluid" alt="jpg">
+
+        <h2 id="¿Que es Terraria?">¿Que es Terraria?</h2>
+
+        <p class="medium-letras">
+            Terraria es un videojuego de acción, aventura y de sandbox producido de forma independiente por el estudio
+            Re-Logic. Tiene características tales como la exploración, la artesanía, la construcción de estructuras y el
+            combate.
+        </p>
+
+        <h2 id="imagenes del juego">imagenes del juego</h2>
+
+        <img src="assets/img/Capture 2020-05-23 21_21_43.png" class="img-fluid" alt="">
+        <img src="assets/img/Capture 2020-05-28 17_47_01.png" class="img-fluid" alt="">
+        <img src="assets/img/Capture 2022-09-29 20_10_51.png" class="img-fluid" alt="">
+        <img src="assets/img/Capture 2022-09-29 20_15_08.png" class="img-fluid" alt="">
+
+        <h2 id="Trailer">Trailer (haga CLICK en la imagen)</h2>
+
+        <iframe width="1080" height="608" src="https://www.youtube.com/embed/H77Zfzy4LWw"
+            title="Terraria: Journey&#39;s End" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+
+
+        <div class="container mt-5">
+
+        </div>
+        <div class="blanco">
+            <h2 id="Formulario">Formulario</h2>
+            <h4>Rellene este formulario para crearse una cuenta para jugar Terraria.</h4>
+
+            <form id="formularioniti3">
+                <p class="medium-letras">Nombre</p>
+                <input type="text" id="n1" oninput="validarN1(event)" required>
+                <p class="medium-letras">Contraseña</p>
+                <input type="password" id="n2" required>
+                <p class="medium-letras">Edad</p>
+                <input type="number" id="n3" oninput="validarN3(event)" required readonly>
+                <p class="medium-letras">Fecha_nac</p>
+                <input type="date" id="n4" required>
+                <p class="medium-letras">email (ejemplo@gmail.com)</p>
+                <input type="email" id="n5" required>
+                <p class="medium-letras">N° Telefono (máximo 10 digitos)</p>
+                <input type="tel" id="n6">
+                <!--documentar un par de cosas, y pasar esto a la página de terraria una vez comprobrado de que no hay algún error.-->
+                <p class="medium-letras">Seleccione el servidor en el cual va a jugar</p>
+                <select id="n7">
+                    <option value="Las">LAS</option>
+                    <option value="Lan">LAN</option>
+                    <option value="Asia">Asia</option>
+                    <option value="EUW">EUW</option>
+                    <option value="NA">NA</option>
+                </select>
+                <p class="medium-letras">Sexo</p>
+                <input type="radio" name="sexo" value="hombre" id="sexo1" required>
+                <!--Poner un radio button preguntando el genero-->
+                <label for="hombre">hombre</label>
+                <input type="radio" name="sexo" value="Mujer" id="sexo2">
+                <label for="mujer">Mujer</label><br>
+                <p class="medium-letras" id="mensajeAdvertencia" style="color: red; display: none;">Por favor elija una opcion.</p>
+                <button type="button" id="btn">Registrar</button><br>
+                <span id="contenedorBtnExtra"></span>
+            </form>
+            <table>
+                <div id="contenedorTabla"> <!--Esto es para contener dentro la tabla-->
+            </table>
+        </div>
+    </div>
+    <script src="assets/js/cosas.js"></script>
+    </div>
+
+
+</body>
+
+</html>
